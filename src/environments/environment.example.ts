@@ -3,7 +3,7 @@ export const environment = {
   apiServer: 'https://westcentralus.api.cognitive.microsoft.com',
   apiKeys: {
     computerVision: '08497d92daa5478587f3cb167e1e4cbf',
-    face: 'a81c912040bf478c9ab0ef1135bae1bc',
+    face: '987a67fa24a74493a9018ef0749015e1',
     textAnalytics: 'a81c912040bf478c9ab0ef1135bae1bc',
     searchApi: 'a81c912040bf478c9ab0ef1135bae1bc'
   },
