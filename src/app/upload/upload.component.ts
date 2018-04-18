@@ -66,22 +66,16 @@ export class UploadComponent extends VisionComponent implements OnInit {
   }
 
   processResult(result: IOcrResult) {
-      let plainText = '';
-      if (result.regions != null) {
-          for (let i = 0; i < result.regions.length; i++) {
-              for (let j = 0; j < result.regions[i].lines.length; j++) {
-                  for (let k = 0; k < result.regions[i].lines[j].words.length; k++) {
-                      plainText += result.regions[i].lines[j].words[k].text + ' ';
-                  }
-                  plainText += '\n';
-              }
-              plainText += '\n';
-          }
-      } else {
-          plainText += 'empty.';
-      }
-
-      this.textResult = plainText;
-      this.ocrResult = result;
-  }
+        const regions = result.regions ? result.regions : [];
+        this.textResult = regions.reduce((textString, region) => {
+            region.lines.forEach((line) => {
+                line.words.forEach((word) => {
+                    textString += word.text + ' ';
+                });
+            });
+            return textString;
+        }, '');
+        
+        this.ocrResult = result;
+    }
 }
