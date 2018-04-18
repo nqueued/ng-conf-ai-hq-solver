@@ -15,7 +15,7 @@ margin-top: 70px;
     align-items: center;
 }
 
-.flex img,
+.flex .img-container,
 .flex bing {
-    flex: 1 1 auto;
+    flex: 1 1 50%;
 }

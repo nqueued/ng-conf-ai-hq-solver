@@ -7,7 +7,7 @@ import {DomSanitizer} from '@angular/platform-browser';
   template: `
   <br><br><br>
   <ng-container *ngIf="link">
-    <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(link)' width="640" height="360" frameborder="0"
+    <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(link)' width="640" height="600" frameborder="0"
         webkitallowfullscreen mozallowfullscreen allowfullscreen>
     </iframe>
   </ng-container>
