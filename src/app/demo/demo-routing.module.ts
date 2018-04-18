@@ -12,37 +12,8 @@ import { BingComponent } from './bing/bing.component';
 
 const routes: Routes = [
   {
-    path: 'demo',
-    children: [
-      {
-        path: 'emotion-recognition',
-        component: EmotionRecognitionComponent
-      },
-      {
-        path: 'face-detection',
-        component: FaceDetectionComponent
-      },
-      {
-        path: 'face-verification',
-        component: FaceVerificationComponent
-      },
-      {
-        path: 'analyze-image',
-        component: ComputerVisionAnalyzeImageComponent
-      },
-      {
-        path: 'read-text',
-        component: ComputerVisionReadTextComponent
-      },
-      {
-        path: 'analyze-text',
-        component: UploadComponent
-      }
-    ]
-  },
-  {
     path: 'home',
-    component: HomeComponent
+    component: UploadComponent
   }
 ];
 

@@ -8,3 +8,14 @@ h2 {
 :host {
 margin-top: 70px;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+.flex img,
+.flex bing {
+    flex: 1 1 auto;
+}

@@ -1,13 +1,9 @@
-<app-hero-banner [apiTitle]='apiTitle' [apiDescription]='apiDescription'>
-</app-hero-banner>
+<header>
+  <h2>Select an image question to search for the answer.</h2>
+</header>
 
 <div class="input-group">
-  <div class="img_container">
-    <img [src]="selectedImageUrl" alt="Selected Image" class="selected-image" />
-  </div>
-    <input type="text" class="form-control" data-defaultValue="Image URL" [(ngModel)]="internetImageUrl" />
-
-
+  <input type="text" class="form-control" data-defaultValue="Image URL" [(ngModel)]="internetImageUrl" />
   <div class="input-group-btn">
       <button class="btn btn-default" type="button" (click)="onInternetUrlSelected()">
           <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
@@ -18,6 +14,10 @@
           />
       </label>
   </div>
-
-  <bing [text]="textResult"></bing> 
+</div>
+<div class="flex">
+  <div class="img-container">
+  <img *ngIf="selectedImageUrl" [src]="selectedImageUrl" alt="Selected Image" class="selected-image" />
+</div>
+  <bing [text]="textResult"></bing>   
 </div>

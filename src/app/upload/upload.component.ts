@@ -25,8 +25,6 @@ export class UploadComponent extends VisionComponent implements OnInit {
 
   ngOnInit() {
       this.imageList = environment.textImageUrls;
-      this.internetImageUrl = environment.textImageUrls[0];
-      this.onInternetUrlSelected();
   }
 
   toggleJSON(b: boolean) {
