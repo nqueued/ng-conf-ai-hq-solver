@@ -8,6 +8,7 @@ import { ComputerVisionAnalyzeImageComponent } from './computer-vision/computer-
 import { TextAnalysisComponent } from './text/text-analysis/text-analysis.component';
 import { HomeComponent } from './home/home.component';
 import { UploadComponent } from '../upload/upload.component';
+import { BingComponent } from './bing/bing.component';
 
 const routes: Routes = [
   {

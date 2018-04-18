@@ -4,6 +4,7 @@ import { DataService } from './data.service';
 import { FaceDataService } from './face-data.service';
 import { VisionDataService } from './vision-data.service';
 import { TextDataService } from './text-data.service';
+import { BingSearchService } from './bing-search.service';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { TextDataService } from './text-data.service';
       DataService,
       FaceDataService,
       VisionDataService,
-      TextDataService
+      TextDataService,
+      BingSearchService,
   ]
 })
 export class CognitiveServicesModule { }
