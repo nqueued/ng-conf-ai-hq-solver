@@ -16,8 +16,6 @@ export class UploadComponent extends VisionComponent implements OnInit {
   showJSON = false;
   textResult: string;
   ocrResult: IOcrResult;
-  apiTitle = 'Computer Vision API - Read Text';
-  apiDescription = 'Extract rich information from images to categorize and process visual data—and protect your users from unwanted content.';
 
   constructor(protected sanitizer: DomSanitizer, private titleService: Title,
     private visionDataService: VisionDataService) {

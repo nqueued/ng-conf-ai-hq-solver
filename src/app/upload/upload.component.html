@@ -1,7 +1,12 @@
 <app-hero-banner [apiTitle]='apiTitle' [apiDescription]='apiDescription'>
 </app-hero-banner>
+
 <div class="input-group">
-  <input type="text" class="form-control" data-defaultValue="Image URL" [(ngModel)]="internetImageUrl" />
+  <div class="img_container">
+    <img [src]="selectedImageUrl" alt="Selected Image" class="selected-image" />
+  </div>
+    <input type="text" class="form-control" data-defaultValue="Image URL" [(ngModel)]="internetImageUrl" />
+
 
   <div class="input-group-btn">
       <button class="btn btn-default" type="button" (click)="onInternetUrlSelected()">
