@@ -7,6 +7,7 @@ import { ComputerVisionReadTextComponent } from './computer-vision/computer-visi
 import { ComputerVisionAnalyzeImageComponent } from './computer-vision/computer-vision-analyze-image/computer-vision-analyze-image.component';
 import { TextAnalysisComponent } from './text/text-analysis/text-analysis.component';
 import { HomeComponent } from './home/home.component';
+import { UploadComponent } from '../upload/upload.component';
 
 const routes: Routes = [
   {
@@ -34,7 +35,7 @@ const routes: Routes = [
       },
       {
         path: 'analyze-text',
-        component: TextAnalysisComponent
+        component: UploadComponent
       }
     ]
   },

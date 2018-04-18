@@ -16,6 +16,7 @@ import { ComputerVisionReadTextComponent } from './computer-vision/computer-visi
 import { ComputerVisionAnalyzeImageComponent } from './computer-vision/computer-vision-analyze-image/computer-vision-analyze-image.component';
 import { TextAnalysisComponent } from './text/text-analysis/text-analysis.component';
 import { HomeComponent } from './home/home.component';
+import { UploadComponent } from '../upload/upload.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, CognitiveServicesModule, DemoRoutingModule],
@@ -28,7 +29,8 @@ import { HomeComponent } from './home/home.component';
     ComputerVisionReadTextComponent,
     ComputerVisionAnalyzeImageComponent,
     TextAnalysisComponent,
-    HomeComponent
+    HomeComponent,
+    UploadComponent
   ],
   providers: [Title]
 })
